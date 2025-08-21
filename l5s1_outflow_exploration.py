@@ -40,3 +40,17 @@ df = get_poi_data()
 
 correlation = df['blast_bat_speed_mph'].corr(df['l5s1_outflow_swing'])
 print(f"\nCorrelation between bat speed and L5S1 outflow: {correlation:.4f}")
+
+import matplotlib.pyplot as plt
+
+# Add this to your existing script
+def create_scatter_plot(df):
+    plt.figure(figsize=(10, 6))
+    plt.scatter(df['blast_bat_speed_mph'], df['l5s1_outflow_swing'], alpha=0.6)
+    plt.xlabel('Bat Speed (mph)')
+    plt.ylabel('L5S1 Outflow')
+    plt.title('L5S1 Outflow vs Bat Speed')
+    plt.show()
+
+# Call it after your correlation calculation
+create_scatter_plot(df)
