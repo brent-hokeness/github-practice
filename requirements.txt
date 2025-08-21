@@ -1,0 +1,8 @@
+python-dotenv
+mariadb
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+
