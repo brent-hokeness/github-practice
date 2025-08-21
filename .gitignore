@@ -1,1 +1,3 @@
 config.env
+hitting_config.env
+*.env
